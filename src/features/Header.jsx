@@ -7,23 +7,20 @@ export function Header(){
         <>
             <AppBar position="static">
                 <Toolbar>
-                    <Grid container justifyContent="center">
-                        <Grid item xs = {2}>
+                    <Grid container direction = "row">
+                        <Grid item xs = {6}>
                             <Typography color = {"white"} fontFamily={"roboto"} variant="h4">MovieTV</Typography>
                         </Grid>
-                        <Grid item xs>
-                        </Grid>
-                        <Grid item xs >
-                            <Link to="/RecentMovies"><Typography color = {"white"} fontFamily={"roboto"} variant="h5">Movies</Typography></Link>
-                        </Grid>
-                        <Grid item xs>
-                        <Link to="/RecentTv"><Typography color = {"white"} fontFamily={"roboto"} variant="h5">TV Series</Typography></Link>
-                        </Grid>
-                        <Grid item xs>
-                        <Link to="/MostPopular"><Typography color = {"white"} fontFamily={"roboto"} variant="h5">Most Popular</Typography></Link>
-                        </Grid>
-                        <Grid item xs>
-                        <Link to="/TopAiring"><Typography  color = {"white"} fontFamily={"roboto"} variant="h5">Top Airing</Typography></Link>
+                        <Grid item xs = {6} container justifyContent="space-evenly">
+                            <Grid item>
+                                <Link to="/MostPopular"><Typography color = {"white"} fontFamily={"roboto"} variant="h5">Most Popular</Typography></Link>
+                            </Grid>
+                            <Grid item>
+                                <Link to="/HighestRated"><Typography color = {"white"} fontFamily={"roboto"} variant="h5">Highest Rated</Typography></Link>
+                            </Grid>
+                            <Grid item>
+                                <Link to="/TopAiring"><Typography  color = {"white"} fontFamily={"roboto"} variant="h5">Trending</Typography></Link>
+                            </Grid>
                         </Grid>
                     </Grid>
                    

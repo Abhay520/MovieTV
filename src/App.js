@@ -3,9 +3,10 @@ import './App.css';
 import {Routes, Route } from "react-router-dom";
 import { Header } from './features/Header.jsx';
 import { TopAiring } from './features/TopAiring.jsx';
+import { HighestRated } from "./features/HighestRated.jsx";
 import { MostPopular } from "./features/MostPopular.jsx";
-import { RecentTV } from "./features/RecentTv.jsx";
-import { RecentMovies } from "./features/RecentMovies.jsx";
+import {Movie} from "./layout/Movie.jsx"
+import { TVSeries } from "./layout/TVSeries.jsx";
 
 function App() {
 
@@ -15,10 +16,11 @@ function App() {
 				<Header/>
         <Routes>
           <Route path = "/" element = {<TopAiring/>}/>
+          <Route path = "/HighestRated" element = {<HighestRated/>}/>
           <Route path = "/MostPopular" element = {<MostPopular/>}/>
-          <Route path = "/RecentMovies" element = {<RecentMovies/>}/>
-          <Route path = "/RecentTv" element = {<RecentTV/>}/>
           <Route path = "/TopAiring" element = {<TopAiring/>}/>
+          <Route path = "/Movie/:id" element = {<Movie/>}/>
+          <Route path = "/Tv/:id" element = {<TVSeries/>}/>
         </Routes>
       </div>
       <div className = 'row'>
