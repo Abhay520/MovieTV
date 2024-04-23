@@ -37,6 +37,7 @@ export function Layout(props){
                     }} size="large" variant="contained">TV Shows</Button>
                 </Grid>
             </Grid>
+
             {props.sortBy ?
                 (<Grid container height = {100} rowSpacing={4} alignItems="center" justifyContent = "flex-end" style={{ display: "flex" }} direction="row">
                     <Grid item xs = {6}>
@@ -54,8 +55,8 @@ export function Layout(props){
             : null}
             {tvVisible ? (daily ? <List movies = {props.tvshowsDaily}/> : null) : null}
             {tvVisible ? (weekly ? <List movies = {props.tvShowsWeekly}/> : null) : null}
-            {movieVisible ? (daily ? <List movies = {props.moviesWeekly}/> : null) : null}
-            {movieVisible ? (weekly ? <List movies = {props.moviesDaily}/> : null) : null}
+            {movieVisible ? (daily ? <List movies = {props.moviesDaily}/> : null) : null}
+            {movieVisible ? (weekly ? <List movies = {props.moviesWeekly}/> : null) : null}
         </>
     );
 }
