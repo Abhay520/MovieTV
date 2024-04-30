@@ -9,7 +9,6 @@ import {Movie} from "./layout/Movie.jsx"
 import { TVSeries } from "./layout/TVSeries.jsx";
 
 function App() {
-
   return (
     <div className="container-fluid App">
       <div className='row d-flex align-items-center mb-4'>
