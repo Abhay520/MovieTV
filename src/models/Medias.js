@@ -3,7 +3,7 @@ import TVSeries from './TVSeries.js';
 import Media from './Media.js';
 
 export class Medias{
-    static authorization_id = 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyOWEzMWM5N2NlMDFlMjVmZTY0N2ZkMzhhMWY5NDlhYyIsInN1YiI6IjY2MjE2OGI4ZTY0MGQ2MDE4NmMzNzgxMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.VCrdsDtkYT3K5l2DmWngmNIIiQd6ps5TDcisjJLDWa4';
+    static authorization_id = 'Enter authorization here...';
     static showMovie = async(id) => {
         return await getInfo('Movie', this.authorization_id, id);
     }
